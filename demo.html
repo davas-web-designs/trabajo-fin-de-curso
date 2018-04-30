@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web</title>
+    <link rel="stylesheet" href="web.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="home">
+            <i class="fas fa-home"></i>
+            <a href="index.html">Inicio </a>
+        </div>
+        <div class="products">
+            <i class="fas fa-shopping-cart"></i>
+            <a href="productos.html">Productos</a>
+        </div>
+        <div class="about">
+            <i class="fas fa-user-circle"></i>
+            <a href="about.html">Sobre mí</a>
+        </div>
+        <div class="demo">
+            <i class="fab fa-android"></i>
+            <a href="demo.html">Demo</a>
+        </div>
+    </nav>
+</body>
+<div class="calculadora" id = "calculadora">
+    <div id="pantalla"></div>
+    <div onclick = "operar(1)" id="uno">1</div>
+    <div onclick = "operar(2)" id="dos">2</div>
+    <div onclick = "operar(3)" id="tres">3</div>
+    <div onclick = "operar('c')" id="limpiar" class = "operaciones">C</div>
+    <div onclick = "operar(4)" id="cuatro">4</div>
+    <div onclick = "operar(5)" id="cinco">5</div>
+    <div onclick = "operar(6)" id="seis">6</div>
+    <div onclick = "operar('+')" id="suma" class = "operaciones">+</div>
+    <div onclick = "operar(7)" id="siete">7</div>
+    <div onclick = "operar(8)" id="ocho">8</div>
+    <div onclick = "operar(9)" id="nueve">9</div>
+    <div onclick = "operar('*')" id="producto" class = "operaciones">X</div>
+    <div onclick = "operar(0)" id="cero">0</div>
+    <div onclick = "operar('/')" id="division" class = "operaciones">/</div>
+    <div onclick = "alert('David López Web designs')"  class = "operaciones">D</div>
+    <div onclick = "operar('=')" id="operar" class = "operaciones">=</div>
+</div>
+
+<button class="btn-start" onclick = "setupGame()">start game</button>
+
+<canvas id = "game" width = "640" height="480"></canvas>
+
+<footer>
+    David López web designs 2018 &copy; | Quizza Designs
+</footer>
+<script src="main.js"></script>
+</html>

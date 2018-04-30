@@ -1,0 +1,162 @@
+/* SCV: estilos revisado 7/3/18 */
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+/*body styles*/
+body{
+    background:url('img/memphis-colorful.png');
+    background-attachment:fixed;
+}
+/*NAV  , footer STYLES*/
+nav , footer{
+    background:#62bcfa;
+    width:100%;
+    padding:4vh 0;
+}
+nav a , footer{
+    text-decoration: none;
+    color:#ecf0f1;
+}
+nav a:hover{
+    color:#95a5a6;
+}
+nav > div{
+    padding:0 1.3%;
+    width:22%;
+    display: inline-block;
+    margin:auto;
+}
+
+
+/*header , section down styles*/
+header , .section_down{
+    color:#ecf0f1;
+    width:70%;
+    padding:2% 0;
+    background: #bbc4ef;
+    margin:5vh auto;
+    border-radius:7px;
+}
+/*main*/
+main > section {
+    margin:auto;
+    background:#fccdd3;
+    padding:1.5vh 0;
+    border-radius:7px;
+    color:white;
+}
+main > section > p {
+    font-size:1.5em;
+    margin:1vh 0;
+}
+main > section > img{
+    max-height:28vh;
+    border-radius:5px;
+}
+/*productos*/
+.productos > section{
+    margin-top:4vh;
+}
+.productos > section:hover{
+    background-color:rgba(0 , 0 , 0 , 0);
+}
+.productos > section:hover > p{
+    color:#fccdd3;
+}
+/*about*/
+.content-about{
+    margin-top:2vh;
+}
+.content-about > img{
+    width:25%;
+}
+.content-about > p {
+    font-family: 'Dancing Script', cursive;
+    font-size:150%;
+    border-bottom:4px solid #fccdd3;
+    padding:2vh 0;
+}
+.content-about > .social img {
+    display:inline-block;
+    height:10vw;
+    width:10vw;
+}
+/*calculadora*/
+.calculadora{
+    color:white;
+    width:50%;
+    background:#bdc3c7;
+    margin:auto;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:2rem;
+    justify-content:space-around;
+    padding:2vh 0;
+    margin-top:2vh;
+    margin-bottom:2vh;
+    border-radius:5px;
+}
+.calculadora > div{
+    width:5vw;
+    height:5vw;
+    border-radius:50%;
+    background:#2c3e50;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+#pantalla{
+    grid-column:1/5;
+    width:100%;
+    border-radius:7px;
+}
+.calculadora .operaciones{
+    background-color:#1abc9c;
+}
+.btn-start{
+  width:50%;
+  margin:auto;
+  border-radius:7px;
+  border:none;
+  outline:none;
+  padding:2vh;
+  margin:2vh auto;
+}
+/*media queries*/
+@media screen and (max-width:700px){
+    nav > div{
+        width:100%;
+        padding:1% 0;
+    }
+    header , .section_down {
+        width:100%;
+    }
+    .content-about > img{
+        width:50%;
+    }
+    .content-about > .social img {
+        margin:auto;
+        display:block;
+        height:30vw;
+        width:30vw;
+    }
+}
+@media screen and (min-width:900px){
+    main > section{
+        width:33%;
+        display:inline-block;
+    }
+}
+@media screen and (max-width:900px){
+    main > section{
+        width:90%;
+        display:block;
+        margin-bottom:1vh;
+    }
+}
